@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SMART-Zielvorlage für Jahresgespräche</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e3f2fd;
+        }
+        .header {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            background-color: #e8f4fc;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .example {
+            background-color: #fff3cd;
+            padding: 10px;
+            border-left: 4px solid #ffc107;
+            margin: 10px 0;
+        }
+        .formula {
+            background-color: #d4edda;
+            padding: 10px;
+            border-left: 4px solid #28a745;
+            margin: 10px 0;
+            font-family: monospace;
+        }
+        .smart-criterion {
+            margin: 15px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .S { background-color: #ffcccc; border-left: 4px solid #ff0000; }
+        .M { background-color: #ccffcc; border-left: 4px solid #00aa00; }
+        .A { background-color: #ccccff; border-left: 4px solid #0000ff; }
+        .R { background-color: #ffffcc; border-left: 4px solid #ffaa00; }
+        .T { background-color: #ffccff; border-left: 4px solid #aa00aa; }
+        .status-smart { color: #28a745; font-weight: bold; }
+        .status-partial { color: #ffc107; font-weight: bold; }
+        .status-not { color: #dc3545; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎯 SMART-Zielvorlage für Jahresgespräche</h1>
+        <p><strong>Erstellt am:</strong> <span id="date"></span> | <strong>Verantwortlich:</strong> ________________________</p>
+        <p><em>Diese Vorlage hilft Ihnen, Ziele nach der SMART-Methode zu formulieren, zu überprüfen und zu dokumentieren.</em></p>
+    </div>
+
+    <div class="explanation">
+        <h2>📚 Was ist SMART?</h2>
+        <p>SMART ist ein Akronym für die fünf Kriterien, die ein gut formuliertes Ziel erfüllen sollte:</p>
+        
+        <div class="smart-criterion S">
+            <strong>🔴 S - Spezifisch</strong>
+            <p><strong>Beschreibung:</strong> Das Ziel ist klar, präzise und unverwechselbar formuliert.</p>
+            <p><strong>Frage:</strong> Was genau soll erreicht werden?</p>
+            <p class="example"><strong>Beispiel:</strong> Statt "Bessere Kundenbetreuung" → "Kundenzufriedenheit von 85% auf 90% steigern"</p>
+        </div>
+
+        <div class="smart-criterion M">
+            <strong>🟢 M - Messbar</strong>
+            <p><strong>Beschreibung:</strong> Das Ziel lässt sich quantitativ oder qualitativ messen.</p>
+            <p><strong>Frage:</strong> Wie kann ich den Fortschritt messen?</p>
+            <p class="example"><strong>Beispiel:</strong> "5 neue Kunden pro Monat akquirieren" oder "Durchschnittliche Bewertung von 4,2 auf 4,7 verbessern"</p>
+        </div>
+
+        <div class="smart-criterion A">
+            <strong>🔵 A - Attraktiv</strong>
+            <p><strong>Beschreibung:</strong> Das Ziel ist motivierend und hat einen klaren Nutzen für Sie oder das Unternehmen.</p>
+            <p><strong>Frage:</strong> Warum ist dieses Ziel wichtig für mich?</p>
+            <p class="example"><strong>Beispiel:</strong> "Zertifizierung erwerben, um Beförderung zu ermöglichen"</p>
+        </div>
+
+        <div class="smart-criterion R">
+            <strong>🟡 R - Realistisch</strong>
+            <p><strong>Beschreibung:</strong> Das Ziel ist mit den vorhandenen Ressourcen, Fähigkeiten und Zeit erreichbar.</p>
+            <p><strong>Frage:</strong> Habe ich die Mittel, um dieses Ziel zu erreichen?</p>
+            <p class="example"><strong>Beispiel:</strong> "Umsatz um 10% steigern" (realistisch) vs. "Umsatz verdoppeln" (unrealistisch)</p>
+        </div>
+
+        <div class="smart-criterion T">
+            <strong>🟣 T - Terminiert</strong>
+            <p><strong>Beschreibung:</strong> Das Ziel hat ein klares Enddatum oder einen definierten Zeitraum.</p>
+            <p><strong>Frage:</strong> Bis wann soll das Ziel erreicht sein?</p>
+            <p class="example"><strong>Beispiel:</strong> "Bis 31.12.2025" oder "Im Q2 2025"</p>
+        </div>
+    </div>
+
+    <h2>📊 SMART-Zielanalyse</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Nr.</th>
+                <th>Ziel</th>
+                <th>Messkriterium</th>
+                <th>S</th>
+                <th>M</th>
+                <th>A</th>
+                <th>R</th>
+                <th>T</th>
+                <th>Verantwortlich</th>
+                <th>Status</th>
+                <th>Bewertung</th>
+                <th>Ressourcen</th>
+                <th>Priorität</th>
+                <th>Notizen</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Beispiel: Kundenzufriedenheit steigern</td>
+                <td>Kundenzufriedenheitsumfrage (Skala 1-5)</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>31.12.2025</td>
+                <td>Max Mustermann</td>
+                <td>In Bearbeitung</td>
+                <td class="status-smart">✅ SMART</td>
+                <td>2h/Woche für Umfragen</td>
+                <td>Hoch</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Beispiel: PRINCE2-Zertifizierung erwerben</td>
+                <td>Zertifikatsprüfung bestehen</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>30.06.2025</td>
+                <td>Anna Schmidt</td>
+                <td>Nicht begonnen</td>
+                <td class="status-smart">✅ SMART</td>
+                <td>1.500 € Budget, 3 Tage Schulung</td>
+                <td>Hoch</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Beispiel: Teamproduktivität verbessern</td>
+                <td>Subjektive Einschätzung</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>✅</td>
+                <td>❓</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="status-not">❌ Nicht SMART</td>
+                <td></td>
+                <td>Mittel</td>
+                <td>Zu vage formuliert</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="formula">
+        <h3>🔧 Excel-Formel für automatische Bewertung</h3>
+        <p>Kopieren Sie diese Formel in die Spalte <strong>Bewertung</strong> (z. B. K2):</p>
+        <p><code>=WENN(UND(D2="✅";E2="✅";F2="✅";G2="✅";H2<>"");"✅ SMART";WENN(ODER(UND(D2="✅";E2="✅";F2="✅");UND(D2="✅";E2="✅";G2="✅");UND(D2="✅";E2="✅";H2<>""));
+        "⚠️ Teilweise SMART";"❌ Nicht SMART"))</code></p>
+        <p><em>Hinweis: Ersetzen Sie die Zellbezüge (D2, E2, etc.) entsprechend Ihrer Tabelle.</em></p>
+    </div>
+
+    <h2>📋 Referenztabellen</h2>
+
+    <h3>Status-Optionen</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Status</th>
+                <th>Beschreibung</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Nicht begonnen</td><td>Ziel wurde noch nicht angefangen</td></tr>
+            <tr><td>In Bearbeitung</td><td>Arbeit am Ziel hat begonnen</td></tr>
+            <tr><td>Blockiert</td><td>Es gibt Hindernisse bei der Umsetzung</td></tr>
+            <tr><td>Abgeschlossen</td><td>Ziel wurde erreicht</td></tr>
+            <tr><td>Abgebrochen</td><td>Ziel wurde nicht erreicht und wird nicht weiterverfolgt</td></tr>
+        </tbody>
+    </table>
+
+    <h3>Prioritätsstufen</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Priorität</th>
+                <th>Beschreibung</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Hoch</td><td>Wichtig und dringend für die Zielerreichung</td></tr>
+            <tr><td>Mittel</td><td>Wichtig, aber nicht dringend</td></tr>
+            <tr><td>Niedrig</td><td>Kann verschoben werden</td></tr>
+        </tbody>
+    </table>
+
+    <h3>Zielkategorien</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Kategorie</th>
+                <th>Beschreibung</th>
+                <th>Beispiel</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Leistungsziele</td><td>Quantitative oder qualitative Verbesserung der Arbeitsleistung</td><td>Umsatz um 15% steigern</td></tr>
+            <tr><td>Entwicklungsziele</td><td>Erwerb neuer Fähigkeiten oder Kompetenzen</td><td>Englisch auf Business-Niveau verbessern</td></tr>
+            <tr><td>Verhaltensziele</td><td>Veränderung von Arbeitsverhalten oder Soft Skills</td><td>Aktives Zuhören in Meetings praktizieren</td></tr>
+            <tr><td>Projektziele</td><td>Abschluss oder Meilensteine von Projekten</td><td>Projekt XY bis 30.09.2025 abschließen</td></tr>
+            <tr><td>Prozessziele</td><td>Optimierung von Arbeitsabläufen</td><td>Durchlaufzeit von Prozess A um 20% reduzieren</td></tr>
+        </tbody>
+    </table>
+
+    <h3>Ressourcen-Typen</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Ressource</th>
+                <th>Beschreibung</th>
+                <th>Beispiel</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Zeit</td><td>Benötigte Arbeitszeit</td><td>2 Stunden pro Woche</td></tr>
+            <tr><td>Budget</td><td>Finanzielle Mittel</td><td>1.500 € für Schulung</td></tr>
+            <tr><td>Tools</td><td>Benötigte Werkzeuge oder Software</td><td>Zugang zu Projektmanagement-Software</td></tr>
+            <tr><td>Schulung</td><td>Benötigte Weiterbildung</td><td>Agile Methoden Kurs</td></tr>
+            <tr><td>Unterstützung</td><td>Hilfe von Kollegen oder Führungskraft</td><td>Mentoring durch Teamlead</td></tr>
+        </tbody>
+    </table>
+
+    <h2>📅 Follow-up Plan</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Checkpoint</th>
+                <th>Zeitraum</th>
+                <th>Verantwortlich</th>
+                <th>Notizen</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1. Überprüfung</td><td>3 Monate nach Zielsetzung</td><td>Führungskraft</td><td></td></tr>
+            <tr><td>2. Überprüfung</td><td>6 Monate nach Zielsetzung</td><td>Mitarbeiter:in</td><td></td></tr>
+            <tr><td>3. Überprüfung</td><td>9 Monate nach Zielsetzung</td><td>Beide</td><td></td></tr>
+            <tr><td>Abschlussbewertung</td><td>Am Enddatum</td><td>Führungskraft</td><td></td></tr>
+        </tbody>
+    </table>
+
+    <div class="explanation">
+        <h2>💡 Tipps für die Nutzung</h2>
+        <ol>
+            <li><strong>Ziele formulieren:</strong> Beginnen Sie mit einem klaren Ziel und prüfen Sie es gegen jedes SMART-Kriterium.</li>
+            <li><strong>Messkriterien definieren:</strong> Legen Sie fest, wie Sie den Fortschritt messen werden (z. B. KPIs, Umfragen, Zertifikate).</li>
+            <li><strong>Realismus prüfen:</strong> Stellen Sie sicher, dass das Ziel mit den vorhandenen Ressourcen erreichbar ist.</li>
+            <li><strong>Termine setzen:</strong> Jedes Ziel braucht ein klares Enddatum.</li>
+            <li><strong>Regelmäßig überprüfen:</strong> Nutzen Sie die Follow-up-Checkpoints, um den Fortschritt zu tracken.</li>
+            <li><strong>Anpassen:</strong> Wenn sich Rahmenbedingungen ändern, passen Sie die Ziele entsprechend an.</li>
+        </ol>
+    </div>
+
+    <div class="explanation">
+        <h2>📥 Download & Nutzung</h2>
+        <p><strong>Option 1: Als HTML speichern</strong></p>
+        <p>Speichern Sie diese Seite als HTML-Datei und öffnen Sie sie in einem Browser.</p>
+        
+        <p><strong>Option 2: Nach Excel exportieren</strong></p>
+        <ol>
+            <li>Kopieren Sie die Tabellen aus dieser HTML-Datei.</li>
+            <li>Fügen Sie sie in Excel ein.</li>
+            <li>Passen Sie die Formeln an (siehe oben).</li>
+            <li>Speichern Sie als .xlsx-Datei.</li>
+        </ol>
+        
+        <p><strong>Option 3: CSV-Datei nutzen</strong></p>
+        <p>Laden Sie die beiliegende <code>SMART_Analyse_Vorlage.csv</code> herunter und öffnen Sie sie in Excel.</p>
+    </div>
+
+    <script>
+        // Datum automatisch einfügen
+        document.getElementById('date').textContent = new Date().toLocaleDateString('de-DE');
+    </script>
+</body>
+</html>

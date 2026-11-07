@@ -1,0 +1,72 @@
+SMART-Zielvorlage für Jahresgespräche,,,,,,,,
+"Diese Vorlage hilft Ihnen, Ziele nach der SMART-Methode zu formulieren und zu überprüfen.",,,,,,,
+"Tipp: Speichern Sie diese Datei als .xlsx, um Formeln und bedingte Formatierung zu nutzen.",,,,,,,
+
+"=== SMART-Kriterien ===",,,,,,,
+Kriterium,Beschreibung,Frage zur Überprüfung,Beispiel
+Spezifisch,"Das Ziel ist klar und präzise formuliert.","Was genau soll erreicht werden?","Kundenzufriedenheit von 85% auf 90% steigern"
+Messbar,"Das Ziel lässt sich quantitativ oder qualitativ messen.","Wie kann ich den Fortschritt messen?","5 neue Kunden pro Monat akquirieren"
+Attraktiv,"Das Ziel ist motivierend und hat einen klaren Nutzen.","Warum ist dieses Ziel wichtig?","Zertifizierung für Beförderung erwerben"
+Realistisch,"Das Ziel ist mit Ressourcen und Fähigkeiten erreichbar.","Habe ich die Mittel dafür?","Umsatz um 10% steigern"
+Terminiert,"Das Ziel hat ein klares Enddatum.","Bis wann soll es erreicht sein?","Bis 31.12.2025"
+
+"=== SMART-Zielanalyse ===",,,,,,,
+
+Nr,Ziel,Messkriterium,Spezifisch,Messbar,Attraktiv,Realistisch,Terminiert,Verantwortlich,Status,Bewertung,Ressourcen,Priorität,Kategorie,Notizen
+1,Beispiel: Kundenzufriedenheit steigern,"Kundenzufriedenheitsumfrage (Skala 1-5)",Ja,Ja,Ja,Ja,31.12.2025,Max Mustermann,In Bearbeitung,✅ SMART,"2h/Woche für Umfragen",Hoch,Leistungsziel,
+2,Beispiel: PRINCE2-Zertifizierung erwerben,"Zertifikatsprüfung bestehen",Ja,Ja,Ja,Ja,30.06.2025,Anna Schmidt,Nicht begonnen,✅ SMART,"1.500 € Budget, 3 Tage Schulung",Hoch,Entwicklungsziel,
+3,Beispiel: Teamproduktivität verbessern,"Subjektive Einschätzung",Nein,Nein,Ja,?,,"",,❌ Nicht SMART,"",Mittel,Verhaltensziel,"Zu vage formuliert"
+4,,,,,,,,,,,,,
+5,,,,,,,,,,,,,
+6,,,,,,,,,,,,,
+7,,,,,,,,,,,,,
+8,,,,,,,,,,,,,
+
+"=== Excel-Formel für automatische Bewertung ===",,,,,,,
+"Kopieren Sie diese Formel in die Spalte 'Bewertung' (z. B. K2):",,,,,,,
+"=WENN(UND(D2=""Ja"";E2=""Ja"";F2=""Ja"";G2=""Ja"";H2<>""")",""✅ SMART""";WENN(ODER(UND(D2=""Ja"";E2=""Ja"";F2=""Ja"");UND(D2=""Ja"";E2=""Ja"";G2=""Ja"");UND(D2=""Ja"";E2=""Ja"";H2<>""")",""⚠️ Teilweise SMART""";""❌ Nicht SMART"""))",,,,,
+
+"=== Referenztabellen ===",,,,,,,
+
+"Status-Optionen",,,,,,,
+Status,Beschreibung
+Nicht begonnen,"Ziel wurde noch nicht angefangen"
+In Bearbeitung,"Arbeit am Ziel hat begonnen"
+Blockiert,"Es gibt Hindernisse bei der Umsetzung"
+Abgeschlossen,"Ziel wurde erreicht"
+Abgebrochen,"Ziel wurde nicht erreicht"
+
+"Prioritätsstufen",,,,,,,
+Priorität,Beschreibung
+Hoch,"Wichtig und dringend"
+Mittel,"Wichtig, aber nicht dringend"
+Niedrig,"Kann verschoben werden"
+
+"Zielkategorien",,,,,,,
+Kategorie,Beschreibung,Beispiel
+Leistungsziele,"Verbesserung der Arbeitsleistung","Umsatz um 15% steigern"
+Entwicklungsziele,"Erwerb neuer Fähigkeiten","Englisch auf Business-Niveau"
+Verhaltensziele,"Veränderung von Arbeitsverhalten","Aktives Zuhören in Meetings"
+Projektziele,"Abschluss von Projekten","Projekt XY bis 30.09.2025 abschließen"
+Prozessziele,"Optimierung von Abläufen","Durchlaufzeit um 20% reduzieren"
+
+"Ressourcen-Typen",,,,,,,
+Ressource,Beschreibung,Beispiel
+Zeit,"Benötigte Arbeitszeit","2 Stunden pro Woche"
+Budget,"Finanzielle Mittel","1.500 € für Schulung"
+Tools,"Benötigte Werkzeuge","Projektmanagement-Software"
+Schulung,"Benötigte Weiterbildung","Agile Methoden Kurs"
+Unterstützung,"Hilfe von Kollegen","Mentoring durch Teamlead"
+
+"Follow-up Plan",,,,,,,
+Checkpoint,Zeitraum,Verantwortlich
+1. Überprüfung,3 Monate nach Zielsetzung,Führungskraft
+2. Überprüfung,6 Monate nach Zielsetzung,Mitarbeiter:in
+3. Überprüfung,9 Monate nach Zielsetzung,Beide
+Abschlussbewertung,Am Enddatum,Führungskraft
+
+"=== Hinweise ===",,,,,,,
+"1. Füllen Sie die grauen Felder in der Zielanalyse-Tabelle aus.",,,,,,,
+"2. Nutzen Sie die Referenztabellen für konsistente Eingaben.",,,,,,,
+"3. Die Bewertung erfolgt automatisch, wenn Sie die Formel in Excel einfügen.",,,,,,,
+"4. Speichern Sie die Datei als .xlsx, um Formatierungen zu erhalten.",,,,,,,

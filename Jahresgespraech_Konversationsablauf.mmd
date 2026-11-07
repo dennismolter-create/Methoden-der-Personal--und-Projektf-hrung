@@ -1,0 +1,226 @@
+```mermaid
+%% Mermaid-Diagramm: Ablauf der Konversation im Jahresgespräch
+%% Format: Sequence Diagram (Zeitverlauf von oben nach unten)
+%% Teilnehmer: Führungskraft (FK) und Mitarbeiter:in (MA)
+
+sequenceDiagram
+    participant FK as Führungskraft
+    participant MA as Mitarbeiter:in
+    
+    %% --- PHASE 1: Begrüßung & Einstieg ---
+    Note over FK,MA: 📅 Phase 1: Begrüßung & Einstieg (5–10 Min.)
+    FK->>MA: Begrüßung (Small Talk)
+    FK->>MA: Agenda & Zeitrahmen vorstellen
+    FK->>MA: Betonung der Wichtigkeit
+    FK->>MA: Hinweis auf Vertraulichkeit
+    
+    %% --- PHASE 2: Rückblick ---
+    Note over FK,MA: 📊 Phase 2: Rückblick (20–25 Min.)
+    FK->>MA: Bittet um Selbstbewertung
+    MA->>FK: Präsentation eigener Erfolge/Herausforderungen
+    FK->>MA: Gibt Feedback zu Leistung & Zielerreichung
+    alt Unterschiedliche Perspektiven
+        MA->>FK: Klärungsfragen stellen
+        FK->>MA: Erklärungen & Beispiele nennen
+    end
+    Note over FK,MA: Gemeinsame Einschätzung von Stärken & Potenzialen
+    
+    %% --- PHASE 3: Zielvereinbarung ---
+    Note over FK,MA: 🎯 Phase 3: Zielvereinbarung (20 Min.)
+    FK->>MA: Vorstellt Unternehmens-/Teamziele
+    FK->>MA: Frag nach eigenen Zielvorschlägen
+    MA->>FK: Nennt persönliche Ziele
+    loop SMART-Formulierung
+        FK->>MA: Prüft auf Spezifität/Messbarkeit
+        MA->>FK: Passt Ziele an
+    end
+    Note over FK,MA: Einigung auf 3–5 Hauptziele
+    
+    %% --- PHASE 4: Entwicklungsplanung ---
+    Note over FK,MA: 🌱 Phase 4: Entwicklungsplanung (15 Min.)
+    FK->>MA: Frag nach Entwicklungswünschen
+    MA->>FK: Nennt Skills/Projekte
+    FK->>MA: Schlägt Maßnahmen vor (Schulungen, Mentoring etc.)
+    MA->>FK: Äußert Bedarf (Ressourcen, Budget)
+    Note over FK,MA: Vereinbarung konkreter Maßnahmen
+    
+    %% --- PHASE 5: Feedback & Austausch ---
+    Note over FK,MA: 💬 Phase 5: Feedback (10–15 Min.)
+    FK->>MA: Gibt konstruktives Feedback (SBI-Methode)
+    MA->>FK: Reagiert & stellt Nachfragen
+    MA->>FK: Gibt Feedback an FK (z. B. Führung, Unterstützung)
+    FK->>MA: Bedankt sich für Feedback
+    
+    %% --- PHASE 6: Zusammenfassung ---
+    Note over FK,MA: 📝 Phase 6: Protokoll (5–10 Min.)
+    FK->>MA: Fasst Vereinbarungen zusammen
+    MA->>FK: Bestätigt oder korrigiert Punkte
+    FK->>MA: Liest Protokoll vor
+    MA->>FK: Unterschreibt Protokoll
+    FK->>FK: Unterschreibt Protokoll
+    
+    %% --- PHASE 7: Abschluss ---
+    Note over FK,MA: 🤝 Phase 7: Abschluss (5 Min.)
+    FK->>MA: Dank für das Gespräch
+    FK->>MA: Betont Wertschätzung
+    FK->>MA: Vereinbart Follow-up (z. B. Quartalscheck)
+    MA->>FK: Verabschiedung
+    
+    %% --- Styling ---
+    %% Phasen-Hintergründe
+    rect rgba(255, 220, 220, 0.2)  %% Rötlich für Einstieg/Abschluss
+        FK->>MA: Begrüßung (Small Talk)
+        FK->>MA: Agenda & Zeitrahmen vorstellen
+        FK->>MA: Betonung der Wichtigkeit
+        FK->>MA: Hinweis auf Vertraulichkeit
+        FK->>MA: Dank für das Gespräch
+        FK->>MA: Betont Wertschätzung
+        FK->>MA: Vereinbart Follow-up (z. B. Quartalscheck)
+        MA->>FK: Verabschiedung
+    end
+    
+    rect rgba(220, 220, 255, 0.2)  %% Blau für Hauptphasen
+        FK->>MA: Bittet um Selbstbewertung
+        MA->>FK: Präsentation eigener Erfolge/Herausforderungen
+        FK->>MA: Gibt Feedback zu Leistung & Zielerreichung
+        alt Unterschiedliche Perspektiven
+            MA->>FK: Klärungsfragen stellen
+            FK->>MA: Erklärungen & Beispiele nennen
+        end
+        FK->>MA: Vorstellt Unternehmens-/Teamziele
+        FK->>MA: Frag nach eigenen Zielvorschlägen
+        MA->>FK: Nennt persönliche Ziele
+        loop SMART-Formulierung
+            FK->>MA: Prüft auf Spezifität/Messbarkeit
+            MA->>FK: Passt Ziele an
+        end
+        FK->>MA: Frag nach Entwicklungswünschen
+        MA->>FK: Nennt Skills/Projekte
+        FK->>MA: Schlägt Maßnahmen vor (Schulungen, Mentoring etc.)
+        MA->>FK: Äußert Bedarf (Ressourcen, Budget)
+        FK->>MA: Gibt konstruktives Feedback (SBI-Methode)
+        MA->>FK: Reagiert & stellt Nachfragen
+        MA->>FK: Gibt Feedback an FK (z. B. Führung, Unterstützung)
+        FK->>MA: Fasst Vereinbarungen zusammen
+        MA->>FK: Bestätigt oder korrigiert Punkte
+        FK->>MA: Liest Protokoll vor
+        MA->>FK: Unterschreibt Protokoll
+        FK->>FK: Unterschreibt Protokoll
+    end
+```
+
+---
+
+### 📌 **Alternative Darstellung: Flowchart (für linearen Ablauf)**
+
+```mermaid
+%% Mermaid-Diagramm: Konversationsablauf als Flowchart
+flowchart TD
+    %% Start
+    A[📅 Begrüßung] --> B[Agenda vorstellen]
+    B --> C[Vertraulichkeit betonen]
+    
+    %% Rückblick
+    C --> D[📊 Selbstbewertung durch MA]
+    D --> E[Feedback durch FK]
+    E --> F{Einigung?}
+    F -->|Ja| G[Stärken/Potenziale festhalten]
+    F -->|Nein| H[Klärungsfragen & Diskussion]
+    H --> E
+    
+    %% Zielvereinbarung
+    G --> I[🎯 Ziele vorstellen (FK)]
+    I --> J[Zielvorschläge (MA)]
+    J --> K[SMART-Formulierung prüfen]
+    K --> L{SMART?}
+    L -->|Ja| M[Ziel vereinbaren]
+    L -->|Nein| N[Anpassen & neu prüfen]
+    N --> K
+    M --> O[Alle Ziele festhalten]
+    
+    %% Entwicklungsplanung
+    O --> P[🌱 Entwicklungswünsche (MA)]
+    P --> Q[Maßnahmen vorschlagen (FK)]
+    Q --> R[Ressourcen klären]
+    R --> S[Maßnahmen vereinbaren]
+    
+    %% Feedback
+    S --> T[💬 Feedback FK → MA]
+    T --> U[Feedback MA → FK]
+    U --> V[Feedback besprechen]
+    
+    %% Protokoll
+    V --> W[📝 Vereinbarungen zusammenfassen]
+    W --> X[Protokoll vorlesen]
+    X --> Y[Unterschriften]
+    
+    %% Abschluss
+    Y --> Z[🤝 Verabschiedung & Follow-up]
+    
+    %% Styling
+    classDef startEnd fill:#f9f,stroke:#333
+    classDef phase fill:#bbf,stroke:#333
+    classDef decision fill:#ff9,stroke:#333
+    
+    class A,B,C,Z startEnd
+    class D,E,F,G,I,J,K,L,M,O,P,Q,R,S,T,U,V,W,X,Y phase
+    class F,L decision
+```
+
+---
+
+### 📌 **Alternative Darstellung: Gantt-Chart (Zeitliche Verteilung)**
+
+```mermaid
+%% Mermaid-Diagramm: Zeitliche Verteilung der Gesprächsphasen
+%% Ideal für Planung der Gesprächsführung
+
+gantt
+    title Zeitplan: Jahresgespräch (90 Minuten)
+    dateFormat  HH:mm
+    axisFormat %H:%M
+    
+    section Phase 1: Begrüßung
+    Begrüßung & Einstieg :a1, 00:00, 10m
+    
+    section Phase 2: Rückblick
+    Selbstbewertung MA  :b1, 00:10, 10m
+    Feedback FK         :b2, 00:20, 10m
+    Diskussion          :b3, 00:30, 5m
+    
+    section Phase 3: Zielvereinbarung
+    Ziele vorstellen    :c1, 00:35, 5m
+    Zielvorschläge MA   :c2, 00:40, 10m
+    SMART-Formulierung  :c3, 00:50, 10m
+    
+    section Phase 4: Entwicklungsplanung
+    Entwicklungswünsche :d1, 01:00, 5m
+    Maßnahmen vereinbaren :d2, 01:05, 10m
+    
+    section Phase 5: Feedback
+    Feedback FK → MA    :e1, 01:15, 5m
+    Feedback MA → FK    :e2, 01:20, 5m
+    Feedback besprechen :e3, 01:25, 5m
+    
+    section Phase 6: Protokoll
+    Zusammenfassung     :f1, 01:30, 5m
+    Protokoll unterschr. :f2, 01:35, 5m
+    
+    section Phase 7: Abschluss
+    Verabschiedung      :g1, 01:40, 5m
+    
+    %% Abhängigkeiten
+    b1 --> b2
+    b2 --> b3
+    c1 --> c2
+    c2 --> c3
+    d1 --> d2
+    e1 --> e2
+    e2 --> e3
+    f1 --> f2
+    
+    %% Styling
+    %% Farben für die Phasen
+    %% Phase 1 & 7: Rötlich
+    %% Phase 2–6: Blau
+```
