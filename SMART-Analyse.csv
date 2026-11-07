@@ -1,0 +1,16 @@
+﻿Spalte,Inhalt,Beispiel
+Nr.,Laufende Nummer,"1, 2, 3"
+Ziel,Zielformulierung,"""Kundenzufriedenheit von 85% auf 90% steigern"""
+Messkriterium,Wie wird gemessen?,"""Kundenzufriedenheitsumfrage (Skala 1-5)"""
+S,Spezifisch? (Ja/Nein),Ja
+M,Messbar? (Ja/Nein),Ja
+A,Attraktiv? (Ja/Nein),Ja
+R,Realistisch? (Ja/Nein),Ja
+T,Terminiert? (Datum),31.12.2025
+Verantwortlich,Wer ist zuständig?,Max Mustermann
+Status,Aktueller Stand,In Bearbeitung
+Bewertung,Automatisch (✅/⚠️/❌),✅ SMART
+Ressourcen,Benötigte Mittel,"""2h/Woche für Umfragen"""
+Priorität,Dringlichkeit,Hoch
+Kategorie,Zieltyp,Leistungsziel
+Notizen,Zusätzliche Infos,"""Zu vage formuliert"""
